@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .header__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header__title {
+    width: 100%;
+    max-width: 480px;
+    font-size: 60px;
+  }
+
+  .header__title_line {
+    margin-top: 72px;
+    margin-bottom: 0;
+  }
+
+  .header__descriptions_text {
+    width: 480px;
+    height: 177px;
+  }
+
+  .header__descriptions_out-text {
+    width: 210px;
+    height: 21px;
+    margin-top: -30px;
+    padding: 0;
+  }
+
+  .bottom-mail {
+    width: 210px;
+  }
+}
