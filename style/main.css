@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 
+body,
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  box-sizing: border-box;
   border: none;
   font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: #161616;
+  text-align: center;
 }
+
 hr {
   border: none;
 }
@@ -16,99 +24,59 @@ a {
 }
 
 .container {
-  position: absolute;
-  width: 100%;
-  background-color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .header__container {
-  position: relative;
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 40px;
+  max-width: 730px;
 }
 
 .header__title {
-  position: relative;
-  width: 100%;
-  height: 118px;
-  max-width: 730px;
-  font-family: Roboto;
   font-weight: 700;
   font-style: normal;
   font-size: 50px;
   line-height: 66px;
-  margin: 0 auto;
-  color: #ffffff;
-  margin-top: 226px;
-  margin-bottom: 0;
-  text-align: center;
+  margin: 20px 0;
+}
+
+.avoid_wrap { 
+  display: inline-block; 
 }
 
 .header__title_line {
-  position: relative;
   width: 161px;
-  height: 1px;
-  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  margin: 50px auto;
 }
 
 .header__descriptions_text {
-  position: relative;
-  width: 730px;
-  font-family: Roboto;
   font-weight: 300;
   font-style: normal;
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
-  color: #ffffff;
-  align-self: center;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-.header__descriptions_out-text {
-  position: relative;
-  width: 132px;
-  height: 20px;
-  font-family: Roboto;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  color: #ffffff;
-  margin: 0 auto;
-  padding-top: 37px;
-}
-
-.out__text_line {
-  position: relative;
-  width: 138px;
-  height: 1px;
-  background-color: #ffffff;
-  margin-top: 59px;
-  margin-bottom: 0;
+  margin: 30px auto;
 }
 
 .bottom-mail {
-  position: relative;
-  width: 350px;
-  height: 18px;
   font-size: 20px;
-  font-family: Roboto;
   font-weight: 700;
   font-style: normal;
-  line-height: 23.44px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 53px;
-  margin-bottom: 240px;
+  line-height: 23px;
 }
 
 .bottom-mail:hover {
-  position: relative;
   transition: ease 1s;
   font-size: 21px;
   color: #c9c9c9;
+}
+
+@media screen and (max-width: 420px) {
+  body,
+  html {
+    height: auto;
+  }
 }
